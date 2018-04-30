@@ -6,5 +6,36 @@
         <title>JS 101!</title>
     </head>
 
-    <body></body>
+    <body>
+      <button
+          id="flipCoin">
+          Flip a coin
+      </button>
+    </body>
+    <script>
+  //    function multiply (a, b) {
+  //      return a * b;
+  //    }
+    //  alert('Hello World');
+    //  let myTWD = {
+      //  name: 'The Walking Dead'
+        //seasons: 8, //comment
+        //getActor: function getActor () {
+        //  let actors = ['Melissa McBride', 'Norman Reedus'];
+        //  alert(Math.Floor(Math.Random () * actors.length));
+        //}
+      //}
+    //  let myArray = [1,2,3,4,5];
+    //  let findLast = myArray.map(function(number){
+    //    console.log(number);
+    //  })
+      let button = document.getElementById('flipCoin');
+      button.addEventListener('click', function () {
+        if (Math.random() < 0.5) {
+          alert('HEADS');
+        } else {
+          alert('TAILS');
+        }
+      });
+    </script>
 </html>
